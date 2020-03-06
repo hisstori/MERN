@@ -1,23 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+        <form>
+          <label>
+            ==New Book Entry==
+            Title: <input type='text' title='title'/> 
+            isbn: <input type='text' isbn='isbn'/>
+            Page Count:  <input type='number' pageCount='Page Count'/>
+            Description: <input type='text' description='Description'/>
+            Categories: <input type='text' categories='Categories'/>
+          </label>
+        </form>
+        </div>
       </header>
     </div>
   );
