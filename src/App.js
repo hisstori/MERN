@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './App.sass';
+import Books from './Books'
 
 class App extends Component {
   render() {
@@ -34,6 +35,7 @@ class App extends Component {
         <div className="buttons">
           <a className="button is-primary">Primary</a>
           <a className="button is-link">Link</a>
+          <Books />
         </div>
       </div>
     );
