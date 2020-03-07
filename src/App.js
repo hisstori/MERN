@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./App.sass";
+// import "./App.sass";
+import 'bulma/css/bulma.css'
 import Title from "./Titles";
 import { Route, Link } from "react-router-dom";
 
@@ -11,12 +12,29 @@ class App extends Component {
         <h1 className="title">Bulma</h1>
 
         <p className="subtitle">
-          Modern CSS framework based on{" "}
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
-            Flexbox
-          </a>
         </p>
 
+        <div class="tabs">
+          <ul>
+            <li class="is-active">
+              <Link to="/titles">
+                <span class="icon is-medium">
+                  <i class="fas fa-image" aria-hidden="true"></i>
+                </span>
+                <span>Titles</span>
+              </Link>
+            </li>
+            <li>
+              <a>Music</a>
+            </li>
+            <li>
+              <a>Videos</a>
+            </li>
+            <li>
+              <a>Documents</a>
+            </li>
+          </ul>
+        </div>
         <div className="field">
           <div className="control">
             <input className="input" type="text" placeholder="Input" />
@@ -35,9 +53,7 @@ class App extends Component {
 
         <div className="buttons">
           <div className="button is-primary">Primary</div>
-          <Link to="/titles">
-            <div className="button is-link">Link</div>
-          </Link>
+          <div className="button is-link">Link</div>
           <div>
             <h1>This is the homepage!</h1>
             <p>Where you can find the programming books you need!</p>
