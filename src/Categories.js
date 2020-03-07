@@ -12,7 +12,7 @@ class Categories extends Component {
     }
     componentDidMount() {
         if (!this.state.data) {
-            fetch("http://localhost:3280/categories/Java")
+            fetch("http://localhost:3280/categories/Python")
             .then(res => res.json())
             .then(res => {
                 this.setState({
@@ -25,7 +25,7 @@ class Categories extends Component {
     render() { 
         if (this.state.data) {
             let info = this.state.data.map(item => {
-                return <div>[{item.categories}]</div>;
+                return <div>{item.title}, [{item.categories}]</div>;
             });
             return <div>{info}</div>;
         }
