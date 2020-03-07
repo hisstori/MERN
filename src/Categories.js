@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App';
-import axios from 'axios';
+// import axios from 'axios';
 
 
 class Categories extends Component {
@@ -12,7 +12,7 @@ class Categories extends Component {
     }
     componentDidMount() {
         if (!this.state.data) {
-            axios("http://localhost:3280/categories/:java")
+            fetch("http://localhost:3280/categories/:categories")
             .then(res => res.json())
             .then(res => {
                 this.setState({
@@ -25,7 +25,7 @@ class Categories extends Component {
     render() { 
         if (this.state.data) {
             let info = this.state.data.map(item => {
-                return <div>[{item.categories[0].java}]</div>;
+                return <div>[{item.categories}]</div>;
             });
             return <div>{info}</div>;
         }

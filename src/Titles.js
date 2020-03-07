@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App";
 // import ReactDOM from 'react-dom';
-import axios from 'axios';
+// import axios from 'axios';
 // import { render } from '@testing-library/react';
 
 
@@ -14,7 +14,7 @@ class Title extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      axios("http://localhost:3280/books")
+      fetch("http://localhost:3280/books")
         .then(res => res.json())
         .then(res => {
           this.setState({
