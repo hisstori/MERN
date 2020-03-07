@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-// import "./App.sass";
-import 'bulma/css/bulma.css'
+import "./App.sass";
+// import 'bulma/css/bulma.css'
 import Title from "./Titles";
+import Categories from "./Categories";
 import { Route, Link } from "react-router-dom";
 
 class App extends Component {
@@ -25,7 +26,12 @@ class App extends Component {
               </Link>
             </li>
             <li>
-              <a>Music</a>
+              <Link to="/categories">
+              <span class="icon is-medium">
+                  <i class="fas fa-image" aria-hidden="true"></i>
+                </span>
+              <span><a>Categories</a></span>
+              </Link>
             </li>
             <li>
               <a>Videos</a>
@@ -60,6 +66,7 @@ class App extends Component {
           </div>
           <main>
             <Route path="/titles" component={Title} />
+            <Route path="/categories" component={Categories} />
           </main>
         </div>
       </div>
