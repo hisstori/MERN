@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import "./App.sass";
 import Title from "./Titles";
-import Home from "./Home";
 import { Route, Link } from "react-router-dom";
 
 class App extends Component {
@@ -36,7 +35,7 @@ class App extends Component {
 
         <div className="buttons">
           <div className="button is-primary">Primary</div>
-          <Link to="/home">
+          <Link to="/titles">
             <div className="button is-link">Link</div>
           </Link>
           <div>
@@ -44,7 +43,7 @@ class App extends Component {
             <p>Where you can find the programming books you need!</p>
           </div>
           <main>
-            <Route path="/home" component={Home} />
+            <Route path="/titles" component={Title} />
           </main>
         </div>
       </div>
