@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import './App.css';
-import './App.sass';
-import Title from './Titles'
-import Home from './Home'
-import { Route, Link } from 'react-router-dom';
+import React, { Component } from "react";
+import "./App.css";
+import "./App.sass";
+import Title from "./Titles";
+import Home from "./Home";
+import { Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <h1 className="title">Bulma</h1>
 
         <p className="subtitle">
-          Modern CSS framework based on{' '}
+          Modern CSS framework based on{" "}
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
             Flexbox
           </a>
@@ -36,14 +36,15 @@ class App extends Component {
 
         <div className="buttons">
           <div className="button is-primary">Primary</div>
-          <Link to='/home'>
-          <div className="button is-link">Link</div>
+          <Link to="/home">
+            <div className="button is-link">Link</div>
           </Link>
-          <Title />
+          <div>
+            <h1>This is the homepage!</h1>
+            <p>Where you can find the programming books you need!</p>
+          </div>
           <main>
-            <Route path = '/home'
-            component={Home}
-            />
+            <Route path="/home" component={Home} />
           </main>
         </div>
       </div>
