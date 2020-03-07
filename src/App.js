@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './App.sass';
 import Title from './Titles'
+import Home from './Home'
+import { Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -33,9 +35,16 @@ class App extends Component {
         </div>
 
         <div className="buttons">
-          <a className="button is-primary">Primary</a>
-          <a className="button is-link">Link</a>
+          <div className="button is-primary">Primary</div>
+          <Link to='/home'>
+          <div className="button is-link">Link</div>
+          </Link>
           <Title />
+          <main>
+            <Route path = '/home'
+            component={Home}
+            />
+          </main>
         </div>
       </div>
     );

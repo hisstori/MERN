@@ -3,7 +3,31 @@ import "./App";
 // import ReactDOM from 'react-dom';
 // import axios from 'axios';
 // import { render } from '@testing-library/react';
-// const url = 'http://localhost:3000/';
+
+
+// class Title extends Component {
+//   componentDidMount() {
+//     const url = 'http://localhost:3280/books';
+//     console.log(url);
+
+//     fetch(url)
+//       .then(response => response.json())
+//       .then(response => {
+//         console.log(response)
+//       })
+//       .catch(err => {
+//         console.error(err)
+//       })
+//   }
+//   render() {
+//     if (this.state.data) {
+//       let info = this.state.data.map(item => {
+//         return <div>{item.title}, [{item.categories}]</div>;
+//       });
+//       return <div>{info}</div>
+//     }
+//   }
+// }
 
 class Title extends Component {
   constructor(props) {
