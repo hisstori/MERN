@@ -5,7 +5,7 @@ import "./App";
 // import { render } from '@testing-library/react';
 
 
-class Title extends Component {
+class Book extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,4 +34,4 @@ class Title extends Component {
     return null
   }
 }
-export default Title;
+export default Book;

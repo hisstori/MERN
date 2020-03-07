@@ -12,7 +12,7 @@ class Categories extends Component {
     }
     componentDidMount() {
         if (!this.state.data) {
-            fetch("http://localhost:3280/categories/:categories")
+            fetch("http://localhost:3280/categories/Java")
             .then(res => res.json())
             .then(res => {
                 this.setState({
