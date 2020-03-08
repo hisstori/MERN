@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import "./App";
-// import ReactDOM from 'react-dom';
-// import axios from 'axios';
-// import { render } from '@testing-library/react';
+import "./App.css"
+// import { Link } from 'react-router-dom';
 
-
-class Book extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +12,7 @@ class Book extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("http://localhost:3280/books")
+      fetch("http://localhost:3280/")
         .then(res => res.json())
         .then(res => {
           this.setState({
@@ -27,11 +25,15 @@ class Book extends Component {
   render() {
     if (this.state.data) {
       let info = this.state.data.map(item => {
-        return <div> key={item.id} {item.title}, [{item.categories}]</div>;
+        return <div> key={item.id}
+            <img src={item.thumbnailUrl} alt={item.title} />
+            <div>{item.title}</div>
+          </div>
       });
-      return <div>{info}</div>;
+      return <div className="gridBase">{Home}</div>;
     }
-    return null
+    return null;
   }
 }
-export default Book;
+
+export default Home;

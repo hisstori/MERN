@@ -5,13 +5,16 @@ import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Categories";
 import Descriptions from "./Descriptions";
+import Home from "./Home";
 import { Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">Bulma</h1>
+        <Link to="/">
+        <h1 className="title">Home</h1>
+        </Link>
 
         <p className="subtitle"></p>
 
@@ -70,6 +73,7 @@ class App extends Component {
             <p>Where you can find the programming books you need!</p>
           </div>
           <main>
+            <Route path="/" component={Home} />
             <Route path="/titles" component={Title} />
             <Route path="/categories" component={Categories} />
             <Route path="/descriptions" component={Descriptions} />
