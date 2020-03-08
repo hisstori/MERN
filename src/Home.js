@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App";
-import "./App.css"
+import "./App.css";
 // import { Link } from 'react-router-dom';
 
 class Home extends Component {
@@ -25,12 +25,14 @@ class Home extends Component {
   render() {
     if (this.state.data) {
       let info = this.state.data.map(item => {
-        return <div> key={item.id}
-            <img src={item.thumbnailUrl} alt={item.title} />
+        return (
+          <div>
+            <div>{item.thumbnailUrl}</div>
             <div>{item.title}</div>
           </div>
+        );
       });
-      return <div className="gridBase">{Home}</div>;
+      return <div>{info}</div>;
     }
     return null;
   }
