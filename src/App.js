@@ -5,7 +5,7 @@ import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Categories";
 import Descriptions from "./Descriptions";
-import Home from "./Home";
+// import Home from "./Home";
 // import Image from "./Images";
 import { Route, Link } from "react-router-dom";
 
@@ -60,39 +60,42 @@ class App extends Component {
         <div class="hero-body">
           <div class="tile is-parent">
             <article class="tile is-child notification is-info">
-              <p class="title">Middle tile</p>
-              <p class="subtitle">With an image</p>
-              <nav
-                  class="pagination is-small"
-                  role="navigation"
-                  aria-label="pagination"
-                >  <a class="pagination-previous">Previous</a></nav>
+              <p class="title">Highest Rated</p>
+              <p class="subtitle">Click to read more</p>
               <div class="columns">
-                <div class="column"><img
-                    src="<Image/>"/></div>
-                <div class="column"><img
-                    src="https://bulma.io/images/bulma-type-white.png"
+                <div class="column">
+                  <figure class="image"><img
+                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/briggs.jpg"/>
+                  </figure>
+                    Hello! Python</div>
+                <div class="column">
+                  <figure class="image"><img
+                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ceder.jpg"
                     alt="Logo"
-                  />Second column</div>
-                <div class="column"><img
-                    src="https://bulma.io/images/bulma-type-white.png"
+                  />
+                  </figure>
+                  Second column</div>
+                <div class="column">
+                  <figure class="image"><img
+                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grayson.jpg"
                     alt="Logo"
-                  />Third column</div>
-                <div class="column"><img
-                    src="https://bulma.io/images/bulma-type-white.png"
+                  />
+                  </figure>
+                  Third column</div>
+                <div class="column">
+                  <figure class="image"><img
+                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/harms.jpg"
                     alt="Logo"
-                  />Fourth column</div>
-                <div class="column"><img
-                    src="https://bulma.io/images/bulma-type-white.png"
+                  />
+                  </figure>
+                  Fourth column</div>
+                <div class="column">
+                  <figure class="image"><img
+                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rappin.jpg"
                     alt="Logo"
-                  />Fifth column</div>
-                <nav
-                  class="pagination is-small"
-                  role="navigation"
-                  aria-label="pagination"
-                >
-                  <a class="pagination-next">Next page</a>
-                </nav>
+                  />
+                  </figure>
+                  Fifth column</div>
               </div>
             </article>
           </div>
@@ -124,7 +127,7 @@ class App extends Component {
             </div>
           </nav>
         </div>
-        <Route path="/" component={Home} />
+        {/* <Route path="/" component={Home} /> */}
         <Route path="/titles" component={Title} />
         <Route path="/categories" component={Categories} />
         <Route path="/descriptions" component={Descriptions} />

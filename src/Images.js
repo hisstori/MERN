@@ -27,7 +27,7 @@ class Image extends Component {
     if (this.state.data) {
       let info = this.state.data.map(item => {
         return (
-          <div>
+          <div> key={item.id}
             <div>{item.thumbnailUrl}</div>
             <div>{item.title}</div>
           </div>
@@ -40,4 +40,5 @@ class Image extends Component {
     return null;
   }
 }
+
 export default Image;
