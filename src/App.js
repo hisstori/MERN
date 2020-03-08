@@ -47,13 +47,13 @@ import { Route, Link } from "react-router-dom";
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <Link to="/" class="navbar-item">
+                  <Link to="/" class="navbar-item is-active">
                     Home
                   </Link>
-                  <Link to="/titles" class="navbar-item">
+                  <Link to="/titles" class="navbar-item is-active">
                     Titles
                   </Link>
-                  <Link to="/categories" class="navbar-item">
+                  <Link to="/categories" class="navbar-item is-active">
                     Python
                   </Link>
                   <span class="navbar-item">
