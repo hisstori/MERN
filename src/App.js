@@ -61,8 +61,36 @@ class App extends Component {
             <article class="tile is-child notification is-info">
               <p class="title">Middle tile</p>
               <p class="subtitle">With an image</p>
-              <figure class="image is-1by12">
-              </figure>
+              <div class="columns">
+                <div class="column"><img
+                    src="https://bulma.io/images/bulma-type-white.png"
+                    alt="Logo"
+                  />First column</div>
+                <div class="column"><img
+                    src="https://bulma.io/images/bulma-type-white.png"
+                    alt="Logo"
+                  />Second column</div>
+                <div class="column"><img
+                    src="https://bulma.io/images/bulma-type-white.png"
+                    alt="Logo"
+                  />Third column</div>
+                <div class="column"><img
+                    src="https://bulma.io/images/bulma-type-white.png"
+                    alt="Logo"
+                  />Fourth column</div>
+                <div class="column"><img
+                    src="https://bulma.io/images/bulma-type-white.png"
+                    alt="Logo"
+                  />Fifth column</div>
+                <nav
+                  class="pagination is-small"
+                  role="navigation"
+                  aria-label="pagination"
+                >
+                  <a class="pagination-previous">Previous</a>
+                  <a class="pagination-next">Next page</a>
+                </nav>
+              </div>
             </article>
           </div>
         </div>

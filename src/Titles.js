@@ -28,14 +28,13 @@ class Book extends Component {
       let info = this.state.data.map(item => {
         return (
           <div>
-            {" "}
             {item.title}, [{item.categories}]
           </div>
         );
       });
       return (
         <div class="hero-body">
-          <div class="container has-text-centered">
+          <div class="container has-text-centered is-4">
             <div class="is-child box">
             <h1 class="info">{info}</h1>
             </div>
