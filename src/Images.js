@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App";
-import "./App.css";
-// import { Link } from 'react-router-dom';
+// import ReactDOM from 'react-dom';
+// import axios from 'axios';
+// import { render } from '@testing-library/react';
 
-class Home extends Component {
+class Image extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,16 +27,17 @@ class Home extends Component {
     if (this.state.data) {
       let info = this.state.data.map(item => {
         return (
-          <div> key={item.id}
+          <div>
             <div>{item.thumbnailUrl}</div>
             <div>{item.title}</div>
           </div>
         );
       });
-      return <div>{info}</div>;
+      return (
+        <div>{info}</div>
+      );
     }
     return null;
   }
 }
-
-export default Home;
+export default Image;

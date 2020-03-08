@@ -6,6 +6,7 @@ import Title from "./Titles";
 import Categories from "./Categories";
 import Descriptions from "./Descriptions";
 import Home from "./Home";
+// import Image from "./Images";
 import { Route, Link } from "react-router-dom";
 
 class App extends Component {
@@ -68,8 +69,7 @@ class App extends Component {
                 >  <a class="pagination-previous">Previous</a></nav>
               <div class="columns">
                 <div class="column"><img
-                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
-                  /><br/></div>
+                    src="<Image/>"/></div>
                 <div class="column"><img
                     src="https://bulma.io/images/bulma-type-white.png"
                     alt="Logo"
