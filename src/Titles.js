@@ -28,7 +28,8 @@ class Book extends Component {
       let info = this.state.data.map(item => {
         return (
           <div>
-            {item.title}, [{item.categories}]
+            {item.title}, <img src={item.thumbnailUrl} alt={item.name}
+                    />, [{item.categories}]
           </div>
         );
       });
