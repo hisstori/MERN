@@ -11,18 +11,18 @@ import { Route, Link } from "react-router-dom";
 
 // class App extends Component {
 
-  class App extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        data: null
-      };
-      this.setData = this.setData.bind(this);
-    }
-  
-    setData(data) {
-      this.setState({ data: data });
-    }
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: null
+    };
+    this.setData = this.setData.bind(this);
+  }
+
+  setData(data) {
+    this.setState({ data: data });
+  }
   render() {
     return (
       <section class="hero is-black is-fullheight">
@@ -53,9 +53,49 @@ import { Route, Link } from "react-router-dom";
                   <Link to="/titles" class="navbar-item is-active">
                     Titles
                   </Link>
-                  <Link to="/categories" class="navbar-item is-active">
-                    Python
-                  </Link>
+                  <div class="dropdown navbar-item">
+                    <div class="dropdown-trigger navbar-item">
+                      <button
+                        class="button"
+                        aria-haspopup="true"
+                        aria-controls="dropdown-menu3"
+                      >
+                        <span>Click me</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                      <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                          Overview
+                        </a>
+                        <a href="#" class="dropdown-item">
+                          Modifiers
+                        </a>
+                        <a href="#" class="dropdown-item">
+                          Grid
+                        </a>
+                        <a href="#" class="dropdown-item">
+                          Form
+                        </a>
+                        <a href="#" class="dropdown-item">
+                          Elements
+                        </a>
+                        <a href="#" class="dropdown-item">
+                          Components
+                        </a>
+                        <a href="#" class="dropdown-item">
+                          Layout
+                        </a>
+                        <hr class="dropdown-divider" />
+                        <a href="#" class="dropdown-item">
+                          More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                   <span class="navbar-item">
                     <a class="button is-danger is-inverted">
                       <span class="icon">
@@ -77,38 +117,46 @@ import { Route, Link } from "react-router-dom";
               <p class="subtitle">Click to read more</p>
               <div class="columns">
                 <div class="column">
-                  <figure class="image"><img
-                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/briggs.jpg"/>
+                  <figure class="image">
+                    <img src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/briggs.jpg" />
                   </figure>
-                    Hello! Python</div>
+                  Hello! Python
+                </div>
                 <div class="column">
-                  <figure class="image"><img
-                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ceder.jpg"
-                    alt="Logo"
-                  />
+                  <figure class="image">
+                    <img
+                      src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ceder.jpg"
+                      alt="Logo"
+                    />
                   </figure>
-                  </div>
+                </div>
                 <div class="column">
-                  <figure class="image"><img
-                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grayson.jpg"
-                    alt="Logo"
-                  />
+                  <figure class="image">
+                    <img
+                      src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grayson.jpg"
+                      alt="Logo"
+                    />
                   </figure>
-                  Third column</div>
+                  Third column
+                </div>
                 <div class="column">
-                  <figure class="image"><img
-                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/harms.jpg"
-                    alt="Logo"
-                  />
+                  <figure class="image">
+                    <img
+                      src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/harms.jpg"
+                      alt="Logo"
+                    />
                   </figure>
-                  Fourth column</div>
+                  Fourth column
+                </div>
                 <div class="column">
-                  <figure class="image"><img
-                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rappin.jpg"
-                    alt="Logo"
-                  />
+                  <figure class="image">
+                    <img
+                      src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rappin.jpg"
+                      alt="Logo"
+                    />
                   </figure>
-                  Fifth column</div>
+                  Fifth column
+                </div>
               </div>
             </article>
           </div>
