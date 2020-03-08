@@ -34,7 +34,7 @@ class App extends Component {
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <Link to="/" class="navbar-item is-active">
+                  <Link to="/" class="navbar-item">
                     Home
                   </Link>
                   <Link to="/titles" class="navbar-item">
@@ -101,7 +101,7 @@ class App extends Component {
           </div>
         </div>
 
-        <div class="hero-foot">
+        {/* <div class="hero-foot">
           <nav class="tabs is-boxed is-fullwidth">
             <div class="container">
               <ul>
@@ -126,7 +126,7 @@ class App extends Component {
               </ul>
             </div>
           </nav>
-        </div>
+        </div> */}
         {/* <Route path="/" component={Home} /> */}
         <Route path="/titles" component={Title} />
         <Route path="/categories" component={Categories} />

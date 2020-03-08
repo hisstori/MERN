@@ -31,6 +31,7 @@ class Categories extends Component {
         );
       });
       return (
+        <div>
         <div class="hero-body">
           <div class="container has-text-centered is-4">
             <div class="is-child box">
@@ -38,6 +39,33 @@ class Categories extends Component {
             </div>
           </div>
         </div>
+        <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li class="is-active">
+                <a>Java</a>
+              </li>
+              <li>
+                <a>Python</a>
+              </li>
+              <li>
+                <a>JavaScript</a>
+              </li>
+              <li>
+                <a>Ruby</a>
+              </li>
+              <li>
+                <a>Web Development</a>
+              </li>
+              <li>
+                <a>Mobile</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      </div>
       );
     }
     return null;
