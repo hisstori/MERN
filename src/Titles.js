@@ -36,7 +36,7 @@ class Book extends Component {
         <div class="hero-body">
           <div class="container has-text-centered is-4">
             <div class="is-child box">
-            <h1 class="info">{info}</h1>
+            <h1 class="info">{info[2]}</h1>
             </div>
           </div>
         </div>
