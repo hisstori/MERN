@@ -27,15 +27,11 @@ class Book extends Component {
     if (this.state.data) {
       let info = this.state.data.map(item => {
         return (
-          // <div>
-          //   {item.title}, <img src={item.thumbnailUrl} alt={item.name} />, [
-          //   {item.categories}]
-          // </div>
           <div class="hero-body">
-            <div class="tile is-ancestor is-centered">
-              <div class="tile is-vertical is-8">
+            <div class="tile is-ancestor is-centered box">
+              <div class="tile is-12">
                 <div class="tile">
-                  <div class="tile is-parent is-">
+                  <div class="tile is-parent">
                     <article class="tile is-child notification is-primary">
                       <p class="title">{item.title}</p>
                       <p class="subtitle">
@@ -50,21 +46,20 @@ class Book extends Component {
                     </article>
                     <div class="tile is-parent is-vertical">
                       <article class="tile is-child notification is-info">
-                        <figure class="image">
+                        <figure class="is-2by2">
                           <img src={item.thumbnailUrl} />
                         </figure>
                       </article>
-                      <div class="tile is-parent">
-                        <article class="tile is-child notification is-danger">
-                          <p class="title">About this book...</p>
-                          <p class="subtitle">{item.longDescription}</p>
-                          <div class="content"></div>
-                        </article>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-danger">
+                <p class="title">About this book...</p>
+                <div class="content">{item.longDescription}</div>
+              </article>
             </div>
           </div>
         );
