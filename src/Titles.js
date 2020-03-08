@@ -27,7 +27,7 @@ class Book extends Component {
   render() {
     if (this.state.data) {
       let info = this.state.data.map(item => {
-        return <div> key={item.id} {item.title}, [{item.categories}]</div>;
+        return <div> {item.title}, [{item.categories}]</div>;
       });
       return <div>{info}</div>;
     }
