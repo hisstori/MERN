@@ -4,7 +4,6 @@ import "./App";
 // import axios from 'axios';
 // import { render } from '@testing-library/react';
 
-
 class Book extends Component {
   constructor(props) {
     super(props);
@@ -27,11 +26,24 @@ class Book extends Component {
   render() {
     if (this.state.data) {
       let info = this.state.data.map(item => {
-        return <div> {item.title}, [{item.categories}]</div>;
+        return (
+          <div>
+            {" "}
+            {item.title}, [{item.categories}]
+          </div>
+        );
       });
-      return <div>{info}</div>;
+      return (
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <div class="is-child box">
+            <h1 class="info">{info}</h1>
+            </div>
+          </div>
+        </div>
+      );
     }
-    return null
+    return null;
   }
 }
 export default Book;
