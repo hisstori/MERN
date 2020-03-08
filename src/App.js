@@ -61,11 +61,15 @@ class App extends Component {
             <article class="tile is-child notification is-info">
               <p class="title">Middle tile</p>
               <p class="subtitle">With an image</p>
+              <nav
+                  class="pagination is-small"
+                  role="navigation"
+                  aria-label="pagination"
+                >  <a class="pagination-previous">Previous</a></nav>
               <div class="columns">
                 <div class="column"><img
-                    src="https://bulma.io/images/bulma-type-white.png"
-                    alt="Logo"
-                  />First column</div>
+                    src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+                  /><br/></div>
                 <div class="column"><img
                     src="https://bulma.io/images/bulma-type-white.png"
                     alt="Logo"
@@ -87,7 +91,6 @@ class App extends Component {
                   role="navigation"
                   aria-label="pagination"
                 >
-                  <a class="pagination-previous">Previous</a>
                   <a class="pagination-next">Next page</a>
                 </nav>
               </div>
