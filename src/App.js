@@ -9,10 +9,23 @@ import Descriptions from "./Descriptions";
 // import Image from "./Images";
 import { Route, Link } from "react-router-dom";
 
-class App extends Component {
+// class App extends Component {
+
+  class App extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        data: null
+      };
+      this.setData = this.setData.bind(this);
+    }
+  
+    setData(data) {
+      this.setState({ data: data });
+    }
   render() {
     return (
-      <section class="hero is-success is-fullheight">
+      <section class="hero is-black is-fullheight">
         <div class="hero-head">
           <header class="navbar">
             <div class="container">
@@ -44,7 +57,7 @@ class App extends Component {
                     Python
                   </Link>
                   <span class="navbar-item">
-                    <a class="button is-success is-inverted">
+                    <a class="button is-danger is-inverted">
                       <span class="icon">
                         <i class="fab fa-github"></i>
                       </span>
@@ -74,7 +87,7 @@ class App extends Component {
                     alt="Logo"
                   />
                   </figure>
-                  Second column</div>
+                  </div>
                 <div class="column">
                   <figure class="image"><img
                     src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grayson.jpg"

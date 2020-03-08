@@ -15,6 +15,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 } */
+link {
+  color: #000000;
+}
 
 @keyframes App-logo-spin {
   from {
