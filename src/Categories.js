@@ -25,22 +25,42 @@ class Categories extends Component {
     if (this.state.data) {
       let info = this.state.data.map(item => {
         return (
-          <div>
-            {item.title}, <img src={item.thumbnailUrl} />, [{item.categories}]
+          <div class="hero-body is-danger box">
+            <div class="tile is-ancestor box">
+              <div class="tile is-8 is-vertical is-parent">
+                <article class="tile is-child notification is-black">
+                  Title:
+                  <p class="title">{item.title}</p>
+                  <br />
+                  Category:
+                  <p class="subtitle">
+                    {item.categories[0]},<br />
+                    {item.categories[1]}
+                  </p>
+                </article>
+                <article class="tile is-child notification is-black">
+                  <p class="title">Authors</p>
+                  <br />
+                  <p class="subtitle">
+                    {item.authors[0]},<br />
+                    {item.authors[1]}
+                  </p>
+                </article>
+              </div>
+              <article class="tile is-child image is-2by1">
+                <img src={item.thumbnailUrl} />
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-danger">
+                <p class="title">About this book...</p>
+                <div class="content">{item.longDescription}</div>
+              </article>
+            </div>
           </div>
         );
       });
-      return (
-        <div>
-          <div class="hero-body">
-            <div class="container has-text-centered is-4">
-              <div class="is-child box">
-                <h1 class="info">{info}</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
+      return <div>{info}</div>;
     }
     return null;
   }

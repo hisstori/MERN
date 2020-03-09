@@ -73,9 +73,15 @@ class App extends Component {
                             </Link><br/>
                             <Link to="/java">
                               Java
-                            </Link>
-                            <Link to="/Ruby">
-                              Ruby
+                            </Link><br/>
+                            <Link to="/rails">
+                              Rails
+                            </Link><br/>
+                            <Link to="/web development">
+                              Web Development
+                            </Link><br/>
+                            <Link to="/mobile">
+                              Mobile
                             </Link>
                           </p>
                         </div>
