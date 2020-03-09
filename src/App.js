@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-// import "./dropdown.sass";
 import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Categories";

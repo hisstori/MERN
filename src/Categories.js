@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App";
-// import axios from 'axios';
 
 class Categories extends Component {
   constructor(props) {
