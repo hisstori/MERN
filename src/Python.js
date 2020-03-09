@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App";
 
-class Categories extends Component {
+class Python extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,4 +65,4 @@ class Categories extends Component {
   }
 }
 
-export default Categories;
+export default Python;

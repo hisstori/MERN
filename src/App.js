@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import "./App.css";
 import "bulma/css/bulma.css";
 import Title from "./Titles";
-import Categories from "./Categories";
+import Categories from "./Python";
 import Descriptions from "./Descriptions";
-import Home from "./Home";
-import { Route, Link } from "react-router-dom";
+import Java from "./Java";
+import Programming from "./Programming";
+import Web from "./Web";
 
+import { Route, Link } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -67,21 +69,15 @@ class App extends Component {
                       <div class="dropdown-content">
                         <div class="dropdown-item">
                           <p>
-                            <Link to="/categories">
-                              Python
-                            </Link><br/>
-                            <Link to="/java">
-                              Java
-                            </Link><br/>
-                            <Link to="/rails">
-                              Rails
-                            </Link><br/>
-                            <Link to="/web development">
-                              Web Development
-                            </Link><br/>
-                            <Link to="/mobile">
-                              Mobile
-                            </Link>
+                            <Link to="/categories">Python</Link>
+                            <br />
+                            <Link to="/java">Java</Link>
+                            <br />
+                            <Link to="/programming">Programming</Link>
+                            <br />
+                            <Link to="/web">Web Development</Link>
+                            <br />
+                            <Link to="/mobile">Mobile</Link>
                           </p>
                         </div>
                       </div>
@@ -93,10 +89,11 @@ class App extends Component {
           </header>
         </div>
         {/* </div> */}
-        {/* <Route path="/" component={Home} /> */}
         <Route path="/titles" component={Title} />
         <Route path="/categories" component={Categories} />
-        <Route path="/descriptions" component={Descriptions} />
+        <Route path="/java" component={Java} />
+        <Route path="/programming" component={Programming} />
+        <Route path="/web" component={Web} />
       </section>
     );
   }
