@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
-// import "./App.sass";
 import "./dropdown.sass";
 import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Categories";
 import Descriptions from "./Descriptions";
 import Home from "./Home";
-// import Image from "./Images";
 import { Route, Link } from "react-router-dom";
 
-// class App extends Component {
 
 class App extends Component {
   constructor(props) {
