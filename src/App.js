@@ -79,45 +79,12 @@ class App extends Component {
                       </div>
                     </div>
                   </div>
-                  <span class="navbar-item">
-                    <a class="button is-danger is-inverted">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Download</span>
-                    </a>
-                  </span>
                 </div>
               </div>
             </div>
           </header>
         </div>
-        {/* <div class="hero-foot">
-          <nav class="tabs is-boxed is-fullwidth">
-            <div class="container">
-              <ul>
-                <li class="is-active">
-                  <a>Overview</a>
-                </li>
-                <li>
-                  <a>Modifiers</a>
-                </li>
-                <li>
-                  <a>Grid</a>
-                </li>
-                <li>
-                  <a>Elements</a>
-                </li>
-                <li>
-                  <a>Components</a>
-                </li>
-                <li>
-                  <a>Layout</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div> */}
+        {/* </div> */}
         {/* <Route path="/" component={Home} /> */}
         <Route path="/titles" component={Title} />
         <Route path="/categories" component={Categories} />

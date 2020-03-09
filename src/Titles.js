@@ -27,31 +27,34 @@ class Book extends Component {
     if (this.state.data) {
       let info = this.state.data.map(item => {
         return (
-          <div class="hero-body box">
+          <div class="hero-body is-danger box">
             <div class="tile is-ancestor box">
               <div class="tile is-6 is-vertical is-parent">
-                <div class="tile is-child">
-                    <article class="tile is-child notification is-primary">
+                {/* <div class="tile is-child"> */}
+                    <article class="tile is-child notification is-black">Title:
                       <p class="title">{item.title}</p>
+                      <br/>
+                      Category:
                       <p class="subtitle">
                         {item.categories[0]},<br/>{item.categories[1]}
                       </p>
                     </article>
-                    <article class="tile is-child notification is-warning">
+                    <article class="tile is-child notification is-black">
                       <p class="title">Authors</p>
+                      <br/>
                       <p class="subtitle">
                         {item.authors[0]},<br/>{item.authors[1]}
                       </p>
                     </article>
                     </div>
                     {/* <div class="tile is-parent is-vertical"> */}
-                      <article class="tile is-child notification is-white">
-                        <figure class="image is-4by4">
+                      <article class="tile is-child">
+                        <figure class="image is-3by3">
                           <img src={item.thumbnailUrl}/>
                         </figure>
                       </article>
                     {/* </div> */}
-                </div>
+                {/* </div> */}
               </div>
               <div class="tile is-parent">
                 <article class="tile is-child notification is-danger">
