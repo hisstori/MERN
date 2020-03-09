@@ -48,13 +48,13 @@ class App extends Component {
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <Link to="/books" class="navbar-item is-active">
+                  <Link to="/books" class="navbar-item">
                     All Books
                   </Link>
-                  <Link to="/new" class="navbar-item is-active">
+                  <Link to="/new" class="navbar-item">
                     New Book
                   </Link>
-                  <Link to="/top" class="navbar-item is-active">
+                  <Link to="/top" class="navbar-item">
                     Top 10 Books
                   </Link>
                   <div class="dropdown is-hoverable navbar-item">
