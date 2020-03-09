@@ -3,7 +3,7 @@ import "./App.css";
 import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Python";
-import Descriptions from "./Descriptions";
+import Mobile from "./Mobile";
 import Java from "./Java";
 import Programming from "./Programming";
 import Web from "./Web";
@@ -94,6 +94,7 @@ class App extends Component {
         <Route path="/java" component={Java} />
         <Route path="/programming" component={Programming} />
         <Route path="/web" component={Web} />
+        <Route path="/mobile" component={Mobile} />
       </section>
     );
   }

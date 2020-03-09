@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "./App";
-// import ReactDOM from 'react-dom';
-// import axios from 'axios';
-// import { render } from '@testing-library/react';
 
-class Book extends Component {
+class Mobile extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +10,7 @@ class Book extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("http://localhost:3280/books")
+      fetch("http://localhost:3280/categories/Mobile")
         .then(res => res.json())
         .then(res => {
           this.setState({
@@ -25,7 +22,7 @@ class Book extends Component {
   }
   render() {
     if (this.state.data) {
-      let info = this.state.data.slice(160,169).map(item => {
+      let info = this.state.data.map(item => {
         return (
           <div class="hero-body is-danger box">
             <div class="tile is-ancestor box">
@@ -67,4 +64,5 @@ class Book extends Component {
     return null;
   }
 }
-export default Book;
+
+export default Mobile;
