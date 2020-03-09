@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
 import "bulma/css/bulma.css";
-import Title from "./Titles";
+import Title from "./Top";
 import Categories from "./Python";
 import Mobile from "./Mobile";
 import Java from "./Java";
 import Programming from "./Programming";
 import Web from "./Web";
+import New from "./New";
 
 import { Route, Link } from "react-router-dom";
 
@@ -29,21 +30,24 @@ class App extends Component {
           <header class="navbar">
             <div class="container">
               <div class="navbar-brand">
-                <Link to="/" class="navbar-item">
+                <Link to="/" class="navbar-item title">
+                  Books of Programming API
                 </Link>
                 <span
                   class="navbar-burger burger"
                   data-target="navbarMenuHeroC"
                 >
-                  <span></span>
+                  <span><Link to="/titles" class="navbar-item is-active">
+                    Top 10 Books
+                  </Link></span>
                   <span></span>
                   <span></span>
                 </span>
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <Link to="/" class="navbar-item is-active">
-                    New Book
+                  <Link to="/new" class="navbar-item is-active">
+                    Home
                   </Link>
                   <Link to="/titles" class="navbar-item is-active">
                     Top 10 Books
@@ -91,6 +95,7 @@ class App extends Component {
         <Route path="/programming" component={Programming} />
         <Route path="/web" component={Web} />
         <Route path="/mobile" component={Mobile} />
+        <Route path="/new" component={New} />
       </section>
     );
   }
