@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./App.sass";
+// import "./App.sass";
+import "./dropdown.sass";
 import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Categories";
@@ -60,7 +61,7 @@ class App extends Component {
                         aria-haspopup="true"
                         aria-controls="dropdown-menu4"
                       >
-                        <span>Hover me</span>
+                        <span>Languages</span>
                         <span class="icon is-small">
                           <i class="fas fa-angle-down" aria-hidden="true"></i>
                         </span>
