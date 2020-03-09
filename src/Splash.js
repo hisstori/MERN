@@ -52,15 +52,6 @@ class Splash extends Component {
                     bar, and the ability for users to share their favorite books
                     by adding them to the database!
                   </p>
-                  <p>
-                    Suspendisse varius ligula in molestie lacinia. Maecenas
-                    varius eget ligula a sagittis. Pellentesque interdum, nisl
-                    nec interdum maximus, augue diam porttitor lorem, et
-                    sollicitudin felis neque sit amet erat. Maecenas imperdiet
-                    felis nisi, fringilla luctus felis hendrerit sit amet.
-                    Aenean vitae gravida diam, finibus dignissim turpis. Sed
-                    eget varius ligula, at volutpat tortor.
-                  </p>
                 </div>
               </div>
             </div>
