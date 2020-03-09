@@ -63,48 +63,6 @@ class Book extends Component {
         );
       });
       return (
-        // <div class="hero-body">
-        //   <div class="container has-text-centered is-4">
-        //     <div class="is-child box">
-        //     <h1 class="info">{info[1]}</h1>
-        //     </div>
-        //   </div>
-        // </div>
-        //=========================//
-        // <div class="hero-body">
-        //   <div class="tile is-ancestor is-centered box">
-        //     <div class="tile is-vertical is-8">
-        //       <div class="tile">
-        //         <div class="tile is-parent is-vertical">
-        //           <article class="tile is-child notification is-primary">
-        //             <p class="title">Title</p>
-        //             <p class="subtitle">{[18].title}</p>
-        //           </article>
-        //           <article class="tile is-child notification is-warning">
-        //             <p class="title">...tiles</p>
-        //             <p class="subtitle">Bottom tile</p>
-        //           </article>
-        //         </div>
-        //         <div class="tile is-parent">
-        //           <article class="tile is-child notification is-info">
-        //             <p class="title">Middle tile</p>
-        //             <p class="subtitle">With an image</p>
-        //             <figure class="image is-4by3">
-        //               <img src="https://bulma.io/images/placeholders/640x480.png" />
-        //             </figure>
-        //           </article>
-        //         </div>
-        //       </div>
-        //       <div class="tile is-parent">
-        //         <article class="tile is-child notification is-danger">
-        //           <p class="title">Wide tile</p>
-        //           <p class="subtitle">Aligned with the right tile</p>
-        //           <div class="content"></div>
-        //         </article>
-        //       </div>
-        //     </div>
-        //   </div>
-        // </div>
         <div>{info[0]}</div>
       );
     }
