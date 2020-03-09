@@ -27,35 +27,35 @@ class New extends Component {
           <div class="field">
             <label class="label">Title</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Text input" />
+              <input class="input" type="text" placeholder="Title" />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Categories</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Text input" />
+              <input class="input" type="text" placeholder="Categories" />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Authors</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Text input" />
+              <input class="input" type="text" placeholder="Authors" />
             </div>
           </div>
 
           <div class="field">
-            <label class="label">Image Link</label>
+            <label class="label">Image Source</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Text input" />
+              <input class="input" type="text" placeholder="Image Source" />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Description</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Text area"></textarea>
+              <textarea class="textarea" placeholder="Description"></textarea>
             </div>
           </div>
 

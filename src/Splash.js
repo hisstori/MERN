@@ -61,13 +61,6 @@ class Splash extends Component {
                     Aenean vitae gravida diam, finibus dignissim turpis. Sed
                     eget varius ligula, at volutpat tortor.
                   </p>
-                  <p>
-                    Integer sollicitudin, tortor a mattis commodo, velit urna
-                    rhoncus erat, vitae congue lectus dolor consequat libero.
-                    Donec leo ligula, maximus et pellentesque sed, gravida a
-                    metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet
-                    lacus, quis faucibus libero. Quisque non semper leo.
-                  </p>
                 </div>
               </div>
             </div>
