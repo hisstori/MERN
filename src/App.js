@@ -94,7 +94,7 @@ class App extends Component {
           </header>
         </div>
         {/* </div> */}
-        <Route path="/" component={Splash} />
+        <Route path="/" exact component={Splash} />
         <Route path="/books" component={Book} />
         <Route path="/top" component={Top} />
         <Route path="/categories" component={Categories} />
