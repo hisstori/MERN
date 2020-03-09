@@ -29,12 +29,8 @@ class App extends Component {
           <header class="navbar">
             <div class="container">
               <div class="navbar-brand">
-                <a class="navbar-item">
-                  <img
-                    src="https://bulma.io/images/bulma-type-white.png"
-                    alt="Logo"
-                  />
-                </a>
+                <Link to="/" class="navbar-item">
+                </Link>
                 <span
                   class="navbar-burger burger"
                   data-target="navbarMenuHeroC"
@@ -47,10 +43,10 @@ class App extends Component {
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
                   <Link to="/" class="navbar-item is-active">
-                    Home
+                    New Book
                   </Link>
                   <Link to="/titles" class="navbar-item is-active">
-                    Titles
+                    Top 10 Books
                   </Link>
                   <div class="dropdown is-hoverable navbar-item">
                     <div class="dropdown-trigger">
@@ -59,7 +55,7 @@ class App extends Component {
                         aria-haspopup="true"
                         aria-controls="dropdown-menu4"
                       >
-                        <span>Languages</span>
+                        <span>Categories</span>
                         <span class="icon is-small">
                           <i class="fas fa-angle-down" aria-hidden="true"></i>
                         </span>
