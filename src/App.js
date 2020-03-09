@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./dropdown.sass";
+// import "./dropdown.sass";
 import "bulma/css/bulma.css";
 import Title from "./Titles";
 import Categories from "./Categories";
@@ -54,7 +54,7 @@ class App extends Component {
                   <div class="dropdown is-hoverable navbar-item">
                     <div class="dropdown-trigger">
                       <button
-                        class="button"
+                        class="button is-black"
                         aria-haspopup="true"
                         aria-controls="dropdown-menu4"
                       >
@@ -118,7 +118,7 @@ class App extends Component {
             </div>
           </nav>
         </div> */}
-        <Route path="/" component={Home} />
+        {/* <Route path="/" component={Home} /> */}
         <Route path="/titles" component={Title} />
         <Route path="/categories" component={Categories} />
         <Route path="/descriptions" component={Descriptions} />

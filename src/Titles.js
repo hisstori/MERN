@@ -29,7 +29,7 @@ class Book extends Component {
         return (
           <div class="hero-body box">
             <div class="tile is-ancestor box">
-              {/* <div class="tile is-6 is-vertical is-parent"> */}
+              <div class="tile is-6 is-vertical is-parent">
                 <div class="tile is-child">
                     <article class="tile is-child notification is-primary">
                       <p class="title">{item.title}</p>
@@ -51,7 +51,7 @@ class Book extends Component {
                         </figure>
                       </article>
                     {/* </div> */}
-                {/* </div> */}
+                </div>
               </div>
               <div class="tile is-parent">
                 <article class="tile is-child notification is-danger">

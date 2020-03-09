@@ -27,12 +27,12 @@ class Home extends Component {
           <div class="hero-body">
             <div class="tile is-parent">
               <article class="tile is-child notification is-info">
-                <p class="title">Highest Rated</p>
+                <p class="title">Top Book</p>
                 <p class="subtitle">Click to read more</p>
                 <div class="columns">
                   <div class="column">
                     <figure class="image">
-                      <img src={item.thumbnailUrl} alt="Logo"/>
+                      <img src={item.thumbnailUrl[86]} alt="Logo"/>
                     </figure>
                     {item.title}
                   </div>
