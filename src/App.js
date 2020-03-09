@@ -74,6 +74,9 @@ class App extends Component {
                             <Link to="/java">
                               Java
                             </Link>
+                            <Link to="/Ruby">
+                              Ruby
+                            </Link>
                           </p>
                         </div>
                       </div>
