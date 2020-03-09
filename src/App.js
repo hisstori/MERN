@@ -8,6 +8,7 @@ import Java from "./Java";
 import Programming from "./Programming";
 import Web from "./Web";
 import New from "./New";
+import Book from "./Titles";
 // import Splash from "./Splash";
 
 import { Route, Link } from "react-router-dom";
@@ -47,10 +48,13 @@ class App extends Component {
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <Link to="/new" class="navbar-item is-active">
-                    Home
+                  <Link to="/books" class="navbar-item is-active">
+                    All Books
                   </Link>
-                  <Link to="/titles" class="navbar-item is-active">
+                  <Link to="/new" class="navbar-item is-active">
+                    New Book
+                  </Link>
+                  <Link to="/top" class="navbar-item is-active">
                     Top 10 Books
                   </Link>
                   <div class="dropdown is-hoverable navbar-item">
@@ -91,7 +95,8 @@ class App extends Component {
         </div>
         {/* </div> */}
         {/* <Route path="/" component={Splash} /> */}
-        <Route path="/titles" component={Top} />
+        <Route path="/books" component={Book} />
+        <Route path="/top" component={Top} />
         <Route path="/categories" component={Categories} />
         <Route path="/java" component={Java} />
         <Route path="/programming" component={Programming} />
