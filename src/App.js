@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import "bulma/css/bulma.css";
-import Title from "./Top";
+import Top from "./Top";
 import Categories from "./Python";
 import Mobile from "./Mobile";
 import Java from "./Java";
 import Programming from "./Programming";
 import Web from "./Web";
 import New from "./New";
+// import Splash from "./Splash";
 
 import { Route, Link } from "react-router-dom";
 
@@ -89,7 +90,8 @@ class App extends Component {
           </header>
         </div>
         {/* </div> */}
-        <Route path="/titles" component={Title} />
+        {/* <Route path="/" component={Splash} /> */}
+        <Route path="/titles" component={Top} />
         <Route path="/categories" component={Categories} />
         <Route path="/java" component={Java} />
         <Route path="/programming" component={Programming} />

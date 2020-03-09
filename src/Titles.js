@@ -4,7 +4,7 @@ import "./App";
 // import axios from 'axios';
 // import { render } from '@testing-library/react';
 
-class Top extends Component {
+class Book extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -67,4 +67,4 @@ class Top extends Component {
     return null;
   }
 }
-export default Top;
+export default Book;
