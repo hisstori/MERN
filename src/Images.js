@@ -13,7 +13,7 @@ class Image extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("https://sleepy-meitner-6d618d.netlify.com/")
+      fetch("http://localhost:8000/")
         .then(res => res.json())
         .then(res => {
           this.setState({
