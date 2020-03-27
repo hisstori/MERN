@@ -39,11 +39,11 @@ class App extends Component {
                   class="navbar-burger burger"
                   data-target="navbarMenuHeroC"
                 >
-                  <span><Link to="/titles" class="navbar-item is-active">
-                    Top 10 Books
-                  </Link></span>
-                  <span></span>
-                  <span></span>
+                  <span>
+                    <Link to="/titles" class="navbar-item is-active">
+                      Top 10 Books
+                    </Link>
+                  </span>
                 </span>
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
@@ -79,7 +79,7 @@ class App extends Component {
                             <Link to="/java">Java</Link>
                             <br />
                             <Link to="/programming">Programming</Link>
-                            <br />  
+                            <br />
                             <Link to="/web">Web Development</Link>
                             <br />
                             <Link to="/mobile">Mobile</Link>
