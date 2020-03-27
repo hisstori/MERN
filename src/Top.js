@@ -13,7 +13,7 @@ class Top extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("http://localhost:3280/books")
+      fetch("https://sleepy-meitner-6d618d.netlify.com/books")
         .then(res => res.json())
         .then(res => {
           this.setState({

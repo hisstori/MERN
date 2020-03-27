@@ -10,7 +10,8 @@ class Java extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("http://localhost:3280/categories/Java")
+      fetch("https://sleepy-meitner-6d618d.netlify.com//categories/Java")
+      fetch("https://sleepy-meitner-6d618d.netlify.com//categories/Java")
         .then(res => res.json())
         .then(res => {
           this.setState({
