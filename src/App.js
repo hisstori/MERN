@@ -32,7 +32,7 @@ class App extends Component {
           <header class="navbar">
             <div class="container">
               <div class="navbar-brand">
-                <Link to="/books" class="navbar-item title">
+                <Link to="/" class="navbar-item title">
                   Books of Programming API
                 </Link>
                 <span
