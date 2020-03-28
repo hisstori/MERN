@@ -10,7 +10,7 @@ class Mobile extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("https://sleepy-meitner-6d618d.netlify.com/categories/Mobile")
+      fetch("https://infinite-fjord-09219.herokuapp.com/categories/Mobile")
         .then(res => res.json())
         .then(res => {
           this.setState({

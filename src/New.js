@@ -9,7 +9,7 @@ class New extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("https://sleepy-meitner-6d618d.netlify.com/books/new")
+      fetch("https://infinite-fjord-09219.herokuapp.com/books/new")
         .then(res => res.json())
         .then(res => {
           this.setState({
