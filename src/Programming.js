@@ -10,7 +10,7 @@ class Programming extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("http://localhost:8000/categories/Programming")
+      fetch("https://sleepy-meitner-6d618d.netlify.com/categories/Programming")
         .then(res => res.json())
         .then(res => {
           this.setState({

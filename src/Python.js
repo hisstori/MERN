@@ -10,7 +10,7 @@ class Python extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("http://localhost:8000/categories/Python")
+      fetch("http://localhost:8000`/categories/Python")
         .then(res => res.json())
         .then(res => {
           this.setState({
