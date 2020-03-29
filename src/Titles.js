@@ -13,7 +13,7 @@ class Book extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("https://infinite-fjord-09219.herokuapp.com")
+      fetch("https://infinite-fjord-09219.herokuapp.com/books")
         .then(res => res.json())
         .then(res => {
           this.setState({

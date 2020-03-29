@@ -9,14 +9,14 @@ class New extends Component {
   }
   componentDidMount() {
     if (!this.state.data) {
-      // fetch("https://infinite-fjord-09219.herokuapp.com/books/new")
-      //   .then(res => res.json())
-      //   .then(res => {
-      //     this.setState({
-      //       data: res
-      //     });
-      //     console.log(res);
-      //   });
+      fetch("https://infinite-fjord-09219.herokuapp.com/books/new")
+        .then(res => res.json())
+        .then(res => {
+          this.setState({
+            data: res
+          });
+          console.log(res);
+        });
     }
   }
   render() {
