@@ -3,59 +3,99 @@ import React, { Component } from "react";
 class New extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    // this.state = {
+    //   title: "",
+    //   categories: "",
+    //   authors: "",
+    //   imageSource: "",
+    //   description: "",
+    // }
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    };
+  handleSubmit(evt) {
+    evt.preventDefault();
+    const data = (evt.target);
+
+    fetch("https://infinite-fjord-09219.herokuapp.com/books/new", {
+      method: "POST",
+      data: {
+        title: "",
+        categories: "",
+        authors: "",
+        imageSource: "",
+        description: ""
+      }
+    });
   }
-  componentDidMount() {
-    if (!this.state.data) {
-      fetch("https://infinite-fjord-09219.herokuapp.com/books/new")
-        .then(res => res.json())
-        .then(res => {
-          this.setState({
-            data: res
-          });
-          console.log(res);
-        });
-    }
-  }
+
   render() {
     return (
-      <div>
+      <form onSubmit={this.handleSubmit}>
         <h1 class="title">Add your favorite book!</h1>
         <div class="box">
           <div class="field">
             <label class="label">Title</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Title" />
+              <input
+                class="input"
+                id="title"
+                type="text"
+                name="title"
+                placeholder="Title"
+              />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Categories</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Categories" />
+              <input
+                class="input"
+                id="categories"
+                type="text"
+                name="categories"
+                placeholder="Categories"
+              />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Authors</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Authors" />
+              <input
+                class="input"
+                id="authors"
+                type="text"
+                name="authors"
+                placeholder="Authors"
+              />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Image Source</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Image Source" />
+              <input
+                class="input"
+                id="image source"
+                type="text"
+                name="image source"
+                placeholder="Image Source"
+              />
             </div>
           </div>
 
           <div class="field">
             <label class="label">Description</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Description"></textarea>
+              <textarea
+                class="textarea"
+                id="description"
+                type="text"
+                name="description"
+                placeholder="Description"
+              ></textarea>
             </div>
           </div>
 
@@ -63,12 +103,9 @@ class New extends Component {
             <div class="control">
               <button class="button is-success">Submit</button>
             </div>
-            <div class="control">
-              <button class="button is-danger is-light">Cancel</button>
-            </div>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }
