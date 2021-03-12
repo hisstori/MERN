@@ -16,7 +16,6 @@ class Programming extends Component {
           this.setState({
             data: res
           });
-          console.log(res);
         });
     }
   }

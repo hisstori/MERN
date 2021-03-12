@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import "./App";
+import TestBR from "./Test-burger";
 
-class Home extends Component {
+class Books extends Component {
   render() {
     return (
-      <div>
-        <h1>This is the homepage!</h1>
-        <p>Where you can find the programming books you need!</p>
+      <div class="hero-body">
+        <TestBR />
+        {/* <p class="subtitle is-1">This is the homepage!
+        Where you can find the programming books you need!</p> */}
       </div>
     );
   }

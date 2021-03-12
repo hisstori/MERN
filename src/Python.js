@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App";
 
-class Python extends Component {
+class Python extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +16,6 @@ class Python extends Component {
           this.setState({
             data: res
           });
-          console.log(res);
         });
     }
   }

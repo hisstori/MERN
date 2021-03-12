@@ -8,10 +8,12 @@ import Java from "./Java";
 import Programming from "./Programming";
 import Web from "./Web";
 import New from "./New";
+import Books from "./Books";
 import Book from "./Titles";
 import Splash from "./Splash";
+import TestBR from "./Test-burger";
 
-import { Route, Link } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -29,73 +31,53 @@ class App extends Component {
     return (
       <section class="hero is-black is-fullheight">
         <div class="hero-head">
-          <header class="navbar">
+          <nav class="navbar is-transparent">
             <div class="container">
-              <div class="navbar-brand">
-                <Link to="/" class="navbar-item title">
+              <div class="navbar-burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+              <div class="navbar-start">
+                <NavLink to="/" class="navbar-item title">
                   Books of Programming API
-                </Link>
-                <span
-                  class="navbar-burger burger"
-                  data-target="navbarMenuHeroC"
-                >
-                  <span>
-                    <Link to="/titles" class="navbar-item is-active">
-                      Top 10 Books
-                    </Link>
-                  </span>
-                </span>
+                </NavLink>
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <Link to="/books" class="navbar-item is-active">
-                    All Books
-                  </Link>
-                  <Link to="/new" class="navbar-item is-active">
+                  <NavLink to="/new" class="button is-black navbar-item">
                     New Book
-                  </Link>
-                  <Link to="/top" class="navbar-item is-active">
+                  </NavLink>
+                  <NavLink to="/top" class="button is-black navbar-item">
                     Top 10 Books
-                  </Link>
-                  <div class="dropdown is-hoverable navbar-item">
-                    <div class="dropdown-trigger">
-                      <button
-                        class="button is-black"
-                        aria-haspopup="true"
-                        aria-controls="dropdown-menu4"
-                      >
-                        <span>Categories</span>
-                        <span class="icon is-small">
-                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                      <div class="dropdown-content">
+                  </NavLink>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link navbar-item button is-black">
+                      Categories
+                      </a>
+                      <div class="navbar-dropdown is-boxed">
                         <div class="dropdown-item">
-                          <p>
-                            <Link to="/categories">Python</Link>
-                            <br />
-                            <Link to="/java">Java</Link>
-                            <br />
-                            <Link to="/programming">Programming</Link>
-                            <br />
-                            <Link to="/web">Web Development</Link>
-                            <br />
-                            <Link to="/mobile">Mobile</Link>
-                          </p>
+                            <NavLink activeClassName="is-active" to="/java">Java</NavLink>
+                            <hr class="navbar-divider" />
+                            <NavLink to="/categories">Python</NavLink>
+                            <hr class="navbar-divider" />
+                            <NavLink to="/programming">Programming</NavLink>
+                            <hr class="navbar-divider" />
+                            <NavLink to="/web">Web Development</NavLink>
+                            <hr class="navbar-divider" />
+                            <NavLink to="/mobile">Mobile</NavLink>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
             </div>
-          </header>
+          </nav>
         </div>
         {/* </div> */}
         <Route path="/" exact component={Splash} />
-        <Route path="/books" component={Book} />
+        <Route path="/books" component={Books} />
         <Route path="/top" component={Top} />
         <Route path="/categories" component={Categories} />
         <Route path="/java" component={Java} />
