@@ -13,13 +13,13 @@ import Book from "./Titles";
 import Splash from "./Splash";
 import TestBR from "./Test-burger";
 
-import { Route, NavLink } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null
+      data: null,
     };
     this.setData = this.setData.bind(this);
   }
@@ -37,39 +37,47 @@ class App extends Component {
                 <span></span>
                 <span></span>
                 <span></span>
-                </div>
+              </div>
               <div class="navbar-start">
-                <NavLink to="/" class="navbar-item title">
+                <Link to="/" class="navbar-item title">
                   Books of Programming API
-                </NavLink>
+                </Link>
               </div>
               <div id="navbarMenuHeroC" class="navbar-menu">
                 <div class="navbar-end">
-                  <NavLink to="/new" class="button is-black navbar-item">
+                  <Link to="/new" class="navbar-item is-black is-hoverable">
                     New Book
-                  </NavLink>
-                  <NavLink to="/top" class="button is-black navbar-item">
+                  </Link>
+                  <Link to="/top" class="navbar-item">
                     Top 10 Books
-                  </NavLink>
+                  </Link>
                   <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link navbar-item button is-black">
-                      Categories
-                      </a>
-                      <div class="navbar-dropdown is-boxed">
-                        <div class="dropdown-item">
-                            <NavLink activeClassName="is-active" to="/java">Java</NavLink>
-                            <hr class="navbar-divider" />
-                            <NavLink to="/categories">Python</NavLink>
-                            <hr class="navbar-divider" />
-                            <NavLink to="/programming">Programming</NavLink>
-                            <hr class="navbar-divider" />
-                            <NavLink to="/web">Web Development</NavLink>
-                            <hr class="navbar-divider" />
-                            <NavLink to="/mobile">Mobile</NavLink>
-                        </div>
+                    <a class="navbar-link navbar-item">Categories</a>
+                    <div class="navbar-dropdown is-boxed">
+                      <div class="dropdown-item">
+                        <Link to="/java">
+                          Java 
+                        </Link>
+                        <hr class="navbar-divider" />
+                        <Link to="/categories">
+                          Python
+                        </Link>
+                        <hr class="navbar-divider" />
+                        <Link to="/programming">
+                          Programming
+                        </Link>
+                        <hr class="navbar-divider" />
+                        <Link to="/web">
+                          Web Development
+                        </Link>
+                        <hr class="navbar-divider" />
+                        <Link to="/mobile">
+                          Mobile
+                        </Link>
                       </div>
                     </div>
                   </div>
+                </div>
                 {/* </div> */}
               </div>
             </div>

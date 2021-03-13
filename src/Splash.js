@@ -5,16 +5,16 @@ class Splash extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null
+      data: null,
     };
   }
   componentDidMount() {
     if (!this.state.data) {
-      fetch("https://infinite-fjord-09219.herokuapp.com") 
-        .then(res => res.json())
-        .then(res => {
+      fetch("https://infinite-fjord-09219.herokuapp.com")
+        .then((res) => res.json())
+        .then((res) => {
           this.setState({
-            data: res
+            data: res,
           });
           console.log(res);
         });
@@ -22,7 +22,7 @@ class Splash extends Component {
   }
   render() {
     if (this.state.data) {
-      let info = this.state.data.slice(227, 240).map(item => {
+      let info = this.state.data.slice(227, 240).map((item) => {
         return (
           <div class="hero-body">
             <div class="tile is-ancestor">
@@ -34,6 +34,7 @@ class Splash extends Component {
                     full library at once.
                   </p>
                 </div>
+                <hr class="navbar-divider" />
                 <div class="tile is-child">
                   <p class="subtitle is-1">Add your favorite book!</p>
                   <p>!==Feature currently under construction==!</p>
