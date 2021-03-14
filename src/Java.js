@@ -22,7 +22,7 @@ class Java extends Component {
   }
   render() {
     if (this.state.data) {
-      let info = this.state.data.slice(29,40).map(item => {
+      let info = this.state.data.slice(40,50).map(item => {
         return (
           <div class="hero-body is-danger box">
             <div class="tile is-ancestor box">

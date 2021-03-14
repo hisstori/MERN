@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from 'react-dom';
 import "./App.css";
 import "bulma/css/bulma.css";
 import Top from "./Top";
@@ -8,10 +9,11 @@ import Java from "./Java";
 import Programming from "./Programming";
 import Web from "./Web";
 import New from "./New";
-import Books from "./Books";
+// import Books from ./Books";
 import Book from "./Titles";
 import Splash from "./Splash";
 import TestBR from "./Test-burger";
+import Search from "./search";
 
 import { Route, Link } from "react-router-dom";
 
@@ -55,29 +57,20 @@ class App extends Component {
                     <a class="navbar-link navbar-item">Categories</a>
                     <div class="navbar-dropdown is-boxed">
                       <div class="dropdown-item">
-                        <Link to="/java">
-                          Java 
-                        </Link>
+                        <Link to="/java">Java</Link>
                         <hr class="navbar-divider" />
-                        <Link to="/categories">
-                          Python
-                        </Link>
+                        <Link to="/categories">Python</Link>
                         <hr class="navbar-divider" />
-                        <Link to="/programming">
-                          Programming
-                        </Link>
+                        <Link to="/programming">Programming</Link>
                         <hr class="navbar-divider" />
-                        <Link to="/web">
-                          Web Development
-                        </Link>
+                        <Link to="/web">Web Development</Link>
                         <hr class="navbar-divider" />
-                        <Link to="/mobile">
-                          Mobile
-                        </Link>
+                        <Link to="/mobile">Mobile</Link>
                       </div>
                     </div>
                   </div>
                 </div>
+                <Search />
                 {/* </div> */}
               </div>
             </div>
@@ -85,7 +78,7 @@ class App extends Component {
         </div>
         {/* </div> */}
         <Route path="/" exact component={Splash} />
-        <Route path="/books" component={Books} />
+        {/* <Route path="/books" component={Books} /> */}
         <Route path="/top" component={Top} />
         <Route path="/categories" component={Categories} />
         <Route path="/java" component={Java} />
@@ -97,4 +90,7 @@ class App extends Component {
     );
   }
 }
+
+// ReactDOM.render(<App />, document.getElementById('app'));
+
 export default App;

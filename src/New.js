@@ -15,7 +15,7 @@ class New extends Component {
 
   handleSubmit(evt) {
     evt.preventDefault();
-    const data = (evt.target);
+    const data = evt.target;
 
     fetch("https://infinite-fjord-09219.herokuapp.com/books/new", {
       method: "POST",
@@ -24,8 +24,8 @@ class New extends Component {
         categories: "",
         authors: "",
         imageSource: "",
-        description: ""
-      }
+        description: "",
+      },
     });
   }
 
