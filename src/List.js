@@ -6,10 +6,13 @@ export default function List({ books }) {
       <ul>
         {books.map((book) => (
           <li key={book.id}>
-            Title:
-            <span>{book.title}</span>
-            Year:
-            <span>{book.year}</span>
+            Title: 
+            <span> {book.title}</span>
+            <br />
+            Authors: 
+            <span> {book.authors[0]}, {book.authors[1]} </span>
+            <br />
+            =====
           </li>
         ))}
       </ul>
